@@ -1,0 +1,14 @@
+{
+  "name": "forex-trade-machine-learning",
+  "version": "1.0.0",
+  "description": "Forex Trade Machine Learning System with FastAPI Backend and Vite React Frontend",
+  "scripts": {
+    "dev": "concurrently -k -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "python backend/server.py",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
